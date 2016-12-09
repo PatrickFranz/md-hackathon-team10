@@ -1,0 +1,23 @@
+$bg-lt-gray : #909090;
+
+*{
+  border-style: border-box;
+  font-size: 10px;
+}
+
+#puzzle-container{
+  display: flex;
+  border: 1px solid blue;
+  margin: auto 0;
+  justify-content: center;
+
+
+  #puzzle-board{
+      
+  }
+
+  #puzzle-pieces{
+    width: 10rem;
+    background-color: $bg-lt-gray;
+  }
+}
