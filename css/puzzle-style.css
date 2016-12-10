@@ -46,9 +46,11 @@ body {
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 100%; /* 16px */
 	font-weight: 400;
-	color: #656464;
+	color: #696969;
 	background: #fff url(../img/bg-lines.png);
 }
+
+/*------ Header Styling ------*/
 
 header {
 	width: 100%;
@@ -59,13 +61,17 @@ header {
 	font-size: 1.5em; /* 24px / 16px */
 }
 
+/*------ Main Section Styling ------*/
+
 section {
 	padding: 3em 0;
 	text-align: center;
 }
 
 section input[type="button"] {
+	position: relative;
 	border: none;
+	outline: 0;
 	font-size: 1em; /* 16px / 16px */
 	font-weight: 700;
 	padding: 0.8em 1.2em 1em;
@@ -75,11 +81,15 @@ section input[type="button"] {
 	cursor: pointer;
 }
 
+
 section input[type="button"]:hover {
 	box-shadow: 0 10px 5px 0px rgba(68,68,68,0.3);
 }
 
+/*------ Puzzle Container Styling ------*/
+
 #puzzle-container {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	max-width: 888px;
@@ -88,7 +98,38 @@ section input[type="button"]:hover {
 	box-shadow: 4px 45px 15px -30px rgba(68,68,68,0.3);
 }
 
+#preview-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
 #puzzle-pieces {
 	background: rgba(0,0,0,0.9); 
 	display: none;
+}
+
+/*------ Footer Styling ------*/
+
+footer {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	bottom: 0;
+	background: rgba(219,219,219, 0.9);
+	padding: 0.7em;
+	font-size: 0.875em;
+}
+
+footer img {
+	border: 3px solid rgb(187,187,187);
+	border-radius: 50%;
+	margin-left: 1em;
+	margin-right: 0.5em;
+	width: 30px;
 }
