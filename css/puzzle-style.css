@@ -81,9 +81,13 @@ section input[type="button"] {
 	cursor: pointer;
 }
 
-
 section input[type="button"]:hover {
 	box-shadow: 0 10px 5px 0px rgba(68,68,68,0.3);
+}
+
+section input[id="preview"],
+section input[id="reset"] {
+	display: none;
 }
 
 /*------ Puzzle Container Styling ------*/
@@ -103,13 +107,136 @@ section input[type="button"]:hover {
 	top: 0;
 	left: 0;
 	opacity: 0;
-	transition: all 0.5s ease;
+	transition: all 1s ease;
 }
 
 #puzzle-pieces {
 	background: rgba(0,0,0,0.9); 
-	display: none;
+	visibility: hidden;
+	height: 0px;
+	transition: height 0.5s ease;
 }
+
+#puzzle-board img[id="unsolved-puzzle"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+#hex-images {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+#hex-images img {
+	position: absolute;
+	transition: all 2s ease;
+
+}
+
+#hex-images img:nth-child(1) {
+	top: 45px;
+	left: 41px;
+}
+
+#hex-images img:nth-child(2) {
+	top: 142px;
+	left: 41px;
+}
+
+#hex-images img:nth-child(3) {
+	top: 94px;
+	left: 125px;
+}
+
+#hex-images img:nth-child(4) {
+	top: 190px;
+	left: 125px;
+}
+
+#hex-images img:nth-child(5) {
+	top: 45px;
+	left: 209px;
+}
+
+#hex-images img:nth-child(6) {
+	top: 143px;
+	left: 209px;
+}
+
+#hex-images img:nth-child(7) {
+	top: 93px;
+	left: 292px;
+}
+
+#hex-images img:nth-child(8) {
+	top: 190px;
+	left: 292px;
+}
+
+#hex-images img:nth-child(9) {
+	top: 45px;
+	left: 377px;
+}
+
+#hex-images img:nth-child(10) {
+	top: 142px;
+	left: 377px;
+}
+
+#hex-images img:nth-child(11) {
+	top: 93px;
+	left: 460px;
+}
+
+#hex-images img:nth-child(12) {
+	top: 190px;
+	left: 460px;
+}
+
+#hex-images img:nth-child(13) {
+	top: 45px;
+	left: 545px;
+}
+
+#hex-images img:nth-child(14) {
+	top: 143px;
+	left: 545px;
+}
+
+#hex-images img:nth-child(15) {
+	top: 93px;
+	left: 629px;
+}
+
+#hex-images img:nth-child(16) {
+	top: 190px;
+	left: 629px;
+}
+
+#hex-images img:nth-child(17) {
+	top: 45px;
+	left: 713px;
+}
+
+#hex-images img:nth-child(18) {
+	top: 142px;
+	left: 713px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*------ Footer Styling ------*/
 
