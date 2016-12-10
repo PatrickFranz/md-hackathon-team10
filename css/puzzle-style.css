@@ -1,12 +1,94 @@
+/*
+Description: MD Hackathon Team 10 Jigsaw Puzzle 
+Authors: Patrick Franz, Rafael Nunez, Mai Xiong, Monali Ghosh
+*/
+
+/*------ External Fonts ------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+/*------ Reset Styles ------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*------ General Page Styling ------*/
+
 * {
-  border-style: border-box;
-  font-size: 10px; }
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 100%; /* 16px */
+	font-weight: 400;
+	color: #656464;
+	background: #fff url(../img/bg-lines.png);
+}
+
+header {
+	width: 100%;
+	background: #000;
+	color: #fff;
+	padding: 1em;
+	box-shadow: 0px 0px 8px 5px rgba(68,68,68,.5);
+	font-size: 1.5em; /* 18px / 16px */
+}
+
+section {
+	padding: 3em 0;
+	text-align: center;
+}
+
+section input[type="button"] {
+	border: none;
+	font-size: 1em; /* 18px / 16px */
+	font-weight: 700;
+	padding: 0.8em 1.2em 1em;
+	background: #fff;
+	margin: 0 auto;
+	box-shadow: 0 4px 2px -1px rgba(68,68,68,0.3);
+	cursor: pointer;
+}
+
+section input[type="button"]:hover {
+	box-shadow: 0 10px 5px 0px rgba(68,68,68,0.3);
+}
 
 #puzzle-container {
-  display: flex;
-  border: 1px solid blue;
-  margin: auto 0;
-  justify-content: center; }
-  #puzzle-container #puzzle-pieces {
-    width: 10rem;
-    background-color: #909090; }
+	display: flex;
+	flex-direction: column;
+	max-width: 888px;
+	margin: 0 auto;
+	border: 10px solid #fff;
+	box-shadow: 4px 45px 15px -30px rgba(68,68,68,0.3);
+}
+
+#puzzle-pieces {
+	background: rgba(0,0,0,0.9); 
+	display: none;
+}

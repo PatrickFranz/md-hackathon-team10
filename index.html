@@ -2,20 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Team 10 Puzzle</title>
+  <title>Team 10 Jigsaw Puzzle</title>
+  <!-- Style sheets -->
   <link rel="stylesheet" href="css/puzzle-style.css">
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
 </head>
 <body>
-  <div id="puzzle-container">
-    <div id="puzzle-board">
-      <img src="img/_Puzzle_solved.png" alt="">
-    </div>
-    <div id="puzzle-pieces">
-      Pieces
-    </div>
-    
 
-  </div>
-  
+  <header><!-- Page header start -->
+    Team 10 Jigsaw Puzzle
+  </header><!-- Page header end -->
+
+  <section>
+
+    <div id="puzzle-container"><!-- Puzzle container start -->
+      <div id="puzzle-board">
+        <img src="img/_Puzzle_solved.png" alt="">
+      </div>
+      <div id="puzzle-pieces">
+        Pieces
+      </div>
+    </div><!-- Puzzle container end -->
+
+    <!-- Bottom buttons start -->
+    <input type="button" value="Scramble" id="scramble">
+    <input type="button" value="Show Preview" id="preview">
+    <!-- Bottom buttons end -->
+
+  </section>
 </body>
 </html>
