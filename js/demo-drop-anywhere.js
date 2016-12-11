@@ -43,7 +43,7 @@ function dragOver(event) {
 }
 
 function dropTile(event) {
-  //event.preventDefault();
+  event.preventDefault();
 
   // get the ID set in dragTile(), format must be specified
   var idOfTile = event.dataTransfer.getData("text");
