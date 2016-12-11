@@ -17,7 +17,7 @@ btnScramble.addEventListener("click", function(e){
 
 btnReset.addEventListener("click", function(e){
 	window.location.reload();
-})
+});
 
 function showSolution(){
 	document.getElementById("preview-img").style.opacity = "1";
