@@ -125,6 +125,8 @@ section input[id="reset"] {
 	transition: opacity 0.5s ease;
 }
 
+/*------ Overlapping Puzzle Images Styling ------*/
+
 #hex-images {
 	position: absolute;
 	top: 0;
