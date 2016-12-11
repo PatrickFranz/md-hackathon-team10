@@ -21,32 +21,70 @@
 .draggableImg {
   position: absolute;
   z-index: 99;
+  cursor: -webkit-grab;
   cursor: grab;
 }
 
 .shakeit {
-  animation-duration: .1s;
-  animation-name: shakeitTheTiles;
-  animation-iteration-count: 4;
+  -webkit-animation-duration: .1s;
+          animation-duration: .1s;
+  -webkit-animation-name: shakeitTheTiles;
+          animation-name: shakeitTheTiles;
+  -webkit-animation-iteration-count: 4;
+          animation-iteration-count: 4;
+}
+
+@-webkit-keyframes shakeitTheTiles {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+  25% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px)
+  }
+  50% {
+    -webkit-transform: translate(-4px, -4px);
+            transform: translate(-4px, -4px)
+  }
+  75% {
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px)
+  }
+  100% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+    -webkit-filter: brightness(175%);
+            filter: brightness(175%);
+  }
 }
 
 @keyframes shakeitTheTiles {
   0% {
-    transform: translate(0, 0);
-    filter: brightness(100%);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
   }
   25% {
-    transform: translate(2px, 2px)
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px)
   }
   50% {
-    transform: translate(-4px, -4px)
+    -webkit-transform: translate(-4px, -4px);
+            transform: translate(-4px, -4px)
   }
   75% {
-    transform: translate(4px, 4px)
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px)
   }
   100% {
-    transform: translate(-2px, -2px);
-    filter: brightness(175%);
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+    -webkit-filter: brightness(175%);
+            filter: brightness(175%);
   }
 }
 

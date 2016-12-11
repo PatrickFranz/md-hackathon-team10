@@ -1,28 +1,7 @@
 // a counter to keep track of when the puzzle is completed
 var counter = 0;
 
-// random numbers
-function randomInt(lo, hi) {
-  var diff = Math.abs(hi - lo);
-  var answer = (Math.random() * diff) + lo;
-  if (Math.round(answer) === lo) {
-    answer = Math.ceil(answer);
-  } else if (Math.round(answer) === hi) {
-    answer = Math.floor(answer);
-  } else {
-    answer = Math.round(answer);
-  }
-  return answer;
-}
 
-// random arrangement of tile when first loaded
-function initialArrangement() {
-  var imgsArr = document.getElementsByClassName("draggableImg");
-  for (var i = 0; i < imgsArr.length; i++) {
-    imgsArr[i].setAttribute("style", "left:" + randomInt(10, 650) + "px" + ";top:" + randomInt(600, 700) + "px;");
-  }
-}
-initialArrangement();
 
 // takes 2 params: event and source for the draggable image
 function dragTile(event, imgsrc) {
@@ -43,7 +22,7 @@ function dragOver(event) {
 }
 
 function dropTile(event) {
-  //event.preventDefault();
+  event.preventDefault();
 
   // get the ID set in dragTile(), format must be specified
   var idOfTile = event.dataTransfer.getData("text");
@@ -75,7 +54,6 @@ function dropTile(event) {
 
   // if the image ID matches that of data-tile value
   if (idOfTile === tileThatFitsHere) {
-
     //once it's in place lock it down
     droppedTile.setAttribute("draggable", "false");
     // increment count of correctly placed tiles
