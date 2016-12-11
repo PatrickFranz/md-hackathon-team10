@@ -81,13 +81,9 @@ section input[type="button"] {
 	cursor: pointer;
 }
 
+
 section input[type="button"]:hover {
 	box-shadow: 0 10px 5px 0px rgba(68,68,68,0.3);
-}
-
-section input[id="preview"],
-section input[id="reset"] {
-	display: none;
 }
 
 /*------ Puzzle Container Styling ------*/
@@ -107,7 +103,9 @@ section input[id="reset"] {
 	top: 0;
 	left: 0;
 	opacity: 0;
-	transition: all 1s ease;
+
+	transition: all 0.5s ease;
+
 }
 
 #puzzle-pieces {
@@ -184,61 +182,6 @@ section input[id="reset"] {
 	top: 45px;
 	left: 377px;
 }
-
-#hex-images img:nth-child(10) {
-	top: 142px;
-	left: 377px;
-}
-
-#hex-images img:nth-child(11) {
-	top: 93px;
-	left: 460px;
-}
-
-#hex-images img:nth-child(12) {
-	top: 190px;
-	left: 460px;
-}
-
-#hex-images img:nth-child(13) {
-	top: 45px;
-	left: 545px;
-}
-
-#hex-images img:nth-child(14) {
-	top: 143px;
-	left: 545px;
-}
-
-#hex-images img:nth-child(15) {
-	top: 93px;
-	left: 629px;
-}
-
-#hex-images img:nth-child(16) {
-	top: 190px;
-	left: 629px;
-}
-
-#hex-images img:nth-child(17) {
-	top: 45px;
-	left: 713px;
-}
-
-#hex-images img:nth-child(18) {
-	top: 142px;
-	left: 713px;
-}
-
-
-
-
-
-
-
-
-
-
 
 /*------ Footer Styling ------*/
 
