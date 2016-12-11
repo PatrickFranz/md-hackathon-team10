@@ -16,8 +16,8 @@
     Team 10 Jigsaw Puzzle
   </header> <!-- Page header end -->
 
-  <section>     
-         <div id="puzzleContainer">
+  <section> 
+        <div id="puzzleContainer">
            <img id="img-unsolved" src="img/puzzle-bg-unsolved.png" alt="Unsolved Image">
 
           <!-- row 1 -->
@@ -83,6 +83,7 @@
           <div class="receiver row9 col9" data-empty="true" data-tile="tile_19"></div>
 
           <!--TILES-->
+          <div id="tiles-area" class="hide">
           <!-- row 1 -->
           <img src="img/Group 45.png" alt="" class="draggableImg" id="tile_45" draggable="true">
           <img src="img/Group 41.png" alt="" class="draggableImg" id="tile_41" draggable="true">
@@ -95,7 +96,6 @@
           <img src="img/Group 39.png" alt="" class="draggableImg" id="tile_39" draggable="true">
           <img src="img/Group 35.png" alt="" class="draggableImg" id="tile_35" draggable="true">
           <img src="img/Group 31.png" alt="" class="draggableImg" id="tile_31" draggable="true">
-
 
           <!-- row 3 -->
           <img src="img/Group 44.png" alt="" class="draggableImg" id="tile_44" draggable="true">
@@ -110,7 +110,6 @@
           <img src="img/Group 34.png" alt="" class="draggableImg" id="tile_34" draggable="true">
           <img src="img/Group 30.png" alt="" class="draggableImg" id="tile_30" draggable="true">
 
-
           <!-- row 5 -->
           <img src="img/Group 27.png" alt="" class="draggableImg" id="tile_27" draggable="true">
           <img src="img/Group 18.png" alt="" class="draggableImg" id="tile_18" draggable="true">
@@ -118,13 +117,11 @@
           <img src="img/Group 10.png" alt="" class="draggableImg" id="tile_10" draggable="true">
           <img src="img/Group 6.png" alt="" class="draggableImg" id="tile_06" draggable="true">
 
-
           <!-- row 6 -->
           <img src="img/Group 25.png" alt="" class="draggableImg" id="tile_25" draggable="true">
           <img src="img/Group 16.png" alt="" class="draggableImg" id="tile_16" draggable="true">
           <img src="img/Group 12.png" alt="" class="draggableImg" id="tile_12" draggable="true">
           <img src="img/Group 8.png" alt="" class="draggableImg" id="tile_08" draggable="true">
-
 
           <!--   row 7 -->
           <img src="img/Group 26.png" alt="" class="draggableImg" id="tile_26" draggable="true">
@@ -133,13 +130,11 @@
           <img src="img/Group 9.png" alt="" class="draggableImg" id="tile_09" draggable="true">
           <img src="img/Group 5.png" alt="" class="draggableImg" id="tile_05" draggable="true">
 
-
           <!--  row 8 -->
           <img src="img/Group 24.png" alt="" class="draggableImg" id="tile_24" draggable="true">
           <img src="img/Group 15.png" alt="" class="draggableImg" id="tile_15" draggable="true">
           <img src="img/Group 11.png" alt="" class="draggableImg" id="tile_11" draggable="true">
           <img src="img/Group 7.png" alt="" class="draggableImg" id="tile_07" draggable="true">
-
 
           <!--  row 9 -->
           <img src="img/Group 23.png" alt="" class="draggableImg" id="tile_23" draggable="true">
@@ -147,9 +142,12 @@
           <img src="img/Group 21.png" alt="" class="draggableImg" id="tile_21" draggable="true">
           <img src="img/Group 20.png" alt="" class="draggableImg" id="tile_20" draggable="true">
           <img src="img/Group 19.png" alt="" class="draggableImg" id="tile_19" draggable="true">
-
+          </div>
           <div id="preview-img">
             <img src="img/puzzle-solved.png" alt="">
+          </div>
+          <div id="timer-block">
+            <div id="timer"></div>
           </div>
         </div>
         
@@ -158,8 +156,9 @@
     <div id="btn-bar">
       <input type="button" value="Scramble" id="scramble">
       <input type="button" value="Hint" id="hint" class="hide">
-      <input type="button" value="Reset" id="reset" class="hide">      
+      <input type="button" value="Reset" id="reset" class="hide"> 
     </div>
+    
     
     <!-- Bottom buttons end -->
 

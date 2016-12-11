@@ -81,10 +81,14 @@ input[type="button"] {
 
 section input[type="button"]:hover {
 	box-shadow: 0 10px 5px 0px rgba(68,68,68,0.3);
+	color: rgba(234, 61, 133, 0.75);
+}
+
+section input[type="button"]:active{
+	color: rgba(234, 61, 133, 1);
 }
 
 /*------ Puzzle Container Styling ------*/
-
 
 #preview-img {
 	position: absolute;
@@ -121,6 +125,30 @@ footer img {
 	margin-left: 1em;
 	margin-right: 0.5em;
 	width: 30px;
+}
+	/*------ Timer Styling ------*/
+#timer-block{
+	position: absolute;
+	bottom: -1.5rem;
+	right: 0.5rem;
+
+}
+#timer {
+	position: relative;
+	height: 0;
+	border: none;
+	outline: 0;
+	font-weight: 700;
+	padding: 0 1.5rem;
+	line-height: 2rem;
+	background: #ea3d85;
+	text-align: center;
+	float: right;
+	box-shadow: 0 4px 2px -1px rgba(68,68,68,0.3);
+	color: #fff;
+	visibility: hidden;
+	transition: all 0.5s ease;
+	
 }
 
 .hide{
