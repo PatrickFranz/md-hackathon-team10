@@ -1,0 +1,118 @@
+#puzzleContainer {
+  background-image: url(../img/_Puzzle_bg_unsolved.png);
+  background-repeat: no-repeat;
+  width: 868px;
+  height: 979px;
+  position: relative;
+  border: 1px solid;
+}
+
+.receiver {
+  height: 95px;
+  width: 110px;
+  position: absolute;
+  z-index: 0;
+}
+
+.draggableImg {
+  position: absolute;
+  z-index: 99;
+}
+
+.shakeit {
+  animation-duration: .1s;
+  animation-name: shakeitTheTiles;
+  animation-iteration-count: 4;
+}
+
+@keyframes shakeitTheTiles {
+  0% {
+    transform: translate(0, 0);
+    filter: brightness(100%);
+  }
+  25% {
+    transform: translate(2px, 2px)
+  }
+  50% {
+    transform: translate(-4px, -4px)
+  }
+  75% {
+    transform: translate(4px, 4px)
+  }
+  100% {
+    transform: translate(-2px, -2px);
+    filter: brightness(175%);
+  }
+}
+
+.row1 {
+  top: 46px;
+}
+
+.row2 {
+  top: 94px;
+}
+
+.row3 {
+  top: 143px;
+}
+
+.row4 {
+  top: 191px;
+}
+
+.row5 {
+  top: 239px;
+}
+
+.row6 {
+  top: 288px;
+}
+
+.row7 {
+  top: 336px;
+}
+
+.row8 {
+  top: 385px;
+}
+
+.row9 {
+  top: 434px;
+}
+
+.col1 {
+  left: 41px;
+}
+
+.col2 {
+  left: 125px;
+}
+
+.col3 {
+  left: 209px;
+}
+
+.col4 {
+  left: 293px;
+}
+
+.col5 {
+  left: 377px;
+}
+
+.col6 {
+  left: 461px;
+}
+
+.col7 {
+  left: 545px;
+}
+
+.col8 {
+  left: 629px;
+}
+
+.col9 {
+  left: 713px;
+}
