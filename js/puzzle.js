@@ -2,6 +2,7 @@ let btnScramble = document.getElementById("scramble")
 let btnHint = document.getElementById("hint")
 let btnReset = document.getElementById("reset")
 let divPieces = document.getElementById("tiles-area");
+let modal = document.getElementById("modal");
 let isStarted = false;
 let countDownTime = 120;
 // Show preview button function // 
@@ -51,7 +52,8 @@ function countDownTimer(){
 		clearTimeout(timer);
 		buzzer.play();
 		buzzer.addEventListener('ended', function(e){
-			alert("Times up");
+			//alert("Times up");
+      modal.classList = "";
 		});
 	}
 
