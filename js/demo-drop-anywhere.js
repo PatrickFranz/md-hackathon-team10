@@ -1,7 +1,6 @@
 // a counter to keep track of when the puzzle is completed
-var counter = 0;
-
-
+let counter = 0;
+let theTiles = document.getElementsByClassName("draggableImg");
 
 // takes 2 params: event and source for the draggable image
 function dragTile(event, imgsrc) {
@@ -53,23 +52,20 @@ function dropTile(event) {
   }
 
   // if the image ID matches that of data-tile value
-  if (idOfTile === tileThatFitsHere) {
+  if (idOfTile === tileThatFitsHere){
+    droppedTile.classList += " glowit"
     //once it's in place lock it down
     droppedTile.setAttribute("draggable", "false");
     // increment count of correctly placed tiles
     counter++;
-    makeThemDance();
+    if(counter >= 41){
+      makeThemDance();
+    }
   }
 }
 
-function makeThemDance() {
-  var theTiles = document.getElementsByClassName("draggableImg");
-  // if all tiles are accounted for
-  if (counter === theTiles.length) {
-    for (var j = 0; j < theTiles.length; j++) {
-      theTiles[j].className += " shakeit";
-    }
-  }
+function win() {
+  
 }
 
 // setup event listeners
