@@ -12,3 +12,4 @@ function hidePreview(){
 	document.getElementById("preview-img").style.opacity = "0";
 }
 
+
