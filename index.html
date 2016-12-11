@@ -5,6 +5,7 @@
   <title>Team 10 Hexagon Jigsaw Puzzle</title>
   <!-- Style sheets -->
   <link rel="stylesheet" href="css/puzzle-style.css">
+  <link rel="stylesheet" href="css/demo.css">
   <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
@@ -15,76 +16,151 @@
     Team 10 Jigsaw Puzzle
   </header> <!-- Page header end -->
 
-  <section>
+  <section>     
+         <div id="puzzleContainer">
+           <img id="img-unsolved" src="img/_Puzzle_bg_unsolved.png" alt="">
 
-    <div id="puzzle-container"><!-- Puzzle container start -->
-      <div id="puzzle-board">
-        <img src="img/_Puzzle_solved.png" alt="Solved Puzzle" id="solved-puzzle">
+          <!-- row 1 -->
+          <div class="receiver row1 col1" data-empty="true" data-tile="tile_45"></div>
+          <div class="receiver row1 col3" data-empty="true" data-tile="tile_41"></div>
+          <div class="receiver row1 col5" data-empty="true" data-tile="tile_37"></div>
+          <div class="receiver row1 col7" data-empty="true" data-tile="tile_33"></div>
+          <div class="receiver row1 col9" data-empty="true" data-tile="tile_29"></div>
 
-        <div id="hex-images">
-        <img src="img/Group 45.png">
-        <img src="img/Group 44.png">
-        <img src="img/Group 43.png">
-        <img src="img/Group 42.png">
-          <img src="img/Group 41.png">
-          <img src="img/Group 40.png">
-          <img src="img/Group 39.png">
-          <img src="img/Group 38.png">
-          <img src="img/Group 37.png">
-          <img src="img/Group 36.png">
-          <img src="img/Group 35.png">
-          <img src="img/Group 34.png">
-          <img src="img/Group 33.png">
-          <img src="img/Group 32.png">
-          <img src="img/Group 31.png">
-          <img src="img/Group 30.png">
-          <img src="img/Group 29.png">
-          <img src="img/Group 28.png">
+          <!-- row 2 -->
 
-          <!--         
-           <img src="img/Group 27.png">
-            <img src="img/Group 26.png">
-            <img src="img/Group 25.png">
-            <img src="img/Group 24.png">
-            <img src="img/Group 23.png">
-            <img src="img/Group 22.png">
-            <img src="img/Group 21.png">
-            <img src="img/Group 20.png">
-            <img src="img/Group 19.png">
-            <img src="img/Group 18.png">
-            <img src="img/Group 17.png">
-            <img src="img/Group 16.png">
-            <img src="img/Group 15.png">
-            <img src="img/Group 14.png">
-            <img src="img/Group 13.png">
-            <img src="img/Group 12.png">
-            <img src="img/Group 11.png">
-            <img src="img/Group 10.png">
-            <img src="img/Group 9.png">
-            <img src="img/Group 8.png">
-            <img src="img/Group 7.png">
-            <img src="img/Group 6.png">
-            <img src="img/Group 5.png">
-          -->
+          <div class="receiver row2 col2" data-empty="true" data-tile="tile_43"></div>
+          <div class="receiver row2 col4" data-empty="true" data-tile="tile_39"></div>
+          <div class="receiver row2 col6" data-empty="true" data-tile="tile_35"></div>
+          <div class="receiver row2 col8" data-empty="true" data-tile="tile_31"></div>
+
+          <!-- row 3 -->
+          <div class="receiver row3 col1" data-empty="true" data-tile="tile_44"></div>
+          <div class="receiver row3 col3" data-empty="true" data-tile="tile_40"></div>
+          <div class="receiver row3 col5" data-empty="true" data-tile="tile_36"></div>
+          <div class="receiver row3 col7" data-empty="true" data-tile="tile_32"></div>
+          <div class="receiver row3 col9" data-empty="true" data-tile="tile_28"></div>
+
+          <!-- row 4 -->
+
+          <div class="receiver row4 col2" data-empty="true" data-tile="tile_42"></div>
+          <div class="receiver row4 col4" data-empty="true" data-tile="tile_38"></div>
+          <div class="receiver row4 col6" data-empty="true" data-tile="tile_34"></div>
+          <div class="receiver row4 col8" data-empty="true" data-tile="tile_30"></div>
+
+          <!-- row 5 -->
+          <div class="receiver row5 col1" data-empty="true" data-tile="tile_27"></div>
+          <div class="receiver row5 col3" data-empty="true" data-tile="tile_18"></div>
+          <div class="receiver row5 col5" data-empty="true" data-tile="tile_14"></div>
+          <div class="receiver row5 col7" data-empty="true" data-tile="tile_10"></div>
+          <div class="receiver row5 col9" data-empty="true" data-tile="tile_06"></div>
+
+          <!-- row 6 -->
+
+          <div class="receiver row6 col2" data-empty="true" data-tile="tile_25"></div>
+          <div class="receiver row6 col4" data-empty="true" data-tile="tile_16"></div>
+          <div class="receiver row6 col6" data-empty="true" data-tile="tile_12"></div>
+          <div class="receiver row6 col8" data-empty="true" data-tile="tile_08"></div>
+
+          <!--  row 7 -->
+          <div class="receiver row7 col1" data-empty="true" data-tile="tile_26"></div>
+          <div class="receiver row7 col3" data-empty="true" data-tile="tile_17"></div>
+          <div class="receiver row7 col5" data-empty="true" data-tile="tile_13"></div>
+          <div class="receiver row7 col7" data-empty="true" data-tile="tile_09"></div>
+          <div class="receiver row7 col9" data-empty="true" data-tile="tile_05"></div>
+
+          <!-- row 8 -->
+          <div class="receiver row8 col2" data-empty="true" data-tile="tile_24"></div>
+          <div class="receiver row8 col4" data-empty="true" data-tile="tile_15"></div>
+          <div class="receiver row8 col6" data-empty="true" data-tile="tile_11"></div>
+          <div class="receiver row8 col8" data-empty="true" data-tile="tile_07"></div>
+
+          <!-- row 9 -->
+          <div class="receiver row9 col1" data-empty="true" data-tile="tile_23"></div>
+          <div class="receiver row9 col3" data-empty="true" data-tile="tile_22"></div>
+          <div class="receiver row9 col5" data-empty="true" data-tile="tile_21"></div>
+          <div class="receiver row9 col7" data-empty="true" data-tile="tile_20"></div>
+          <div class="receiver row9 col9" data-empty="true" data-tile="tile_19"></div>
+
+          <!--TILES-->
+          <!-- row 1 -->
+          <img src="img/Group 45.png" alt="" class="draggableImg" id="tile_45" draggable="true">
+          <img src="img/Group 41.png" alt="" class="draggableImg" id="tile_41" draggable="true">
+          <img src="img/Group 37.png" alt="" class="draggableImg" id="tile_37" draggable="true">
+          <img src="img/Group 33.png" alt="" class="draggableImg" id="tile_33" draggable="true">
+          <img src="img/Group 29.png" alt="" class="draggableImg" id="tile_29" draggable="true">
+
+          <!-- row 2 -->
+          <img src="img/Group 43.png" alt="" class="draggableImg" id="tile_43" draggable="true">
+          <img src="img/Group 39.png" alt="" class="draggableImg" id="tile_39" draggable="true">
+          <img src="img/Group 35.png" alt="" class="draggableImg" id="tile_35" draggable="true">
+          <img src="img/Group 31.png" alt="" class="draggableImg" id="tile_31" draggable="true">
+
+
+          <!-- row 3 -->
+          <img src="img/Group 44.png" alt="" class="draggableImg" id="tile_44" draggable="true">
+          <img src="img/Group 40.png" alt="" class="draggableImg" id="tile_40" draggable="true">
+          <img src="img/Group 36.png" alt="" class="draggableImg" id="tile_36" draggable="true">
+          <img src="img/Group 32.png" alt="" class="draggableImg" id="tile_32" draggable="true">
+          <img src="img/Group 28.png" alt="" class="draggableImg" id="tile_28" draggable="true">
+
+          <!-- row 4 -->
+          <img src="img/Group 42.png" alt="" class="draggableImg" id="tile_42" draggable="true">
+          <img src="img/Group 38.png" alt="" class="draggableImg" id="tile_38" draggable="true">
+          <img src="img/Group 34.png" alt="" class="draggableImg" id="tile_34" draggable="true">
+          <img src="img/Group 30.png" alt="" class="draggableImg" id="tile_30" draggable="true">
+
+
+          <!-- row 5 -->
+          <img src="img/Group 27.png" alt="" class="draggableImg" id="tile_27" draggable="true">
+          <img src="img/Group 18.png" alt="" class="draggableImg" id="tile_18" draggable="true">
+          <img src="img/Group 14.png" alt="" class="draggableImg" id="tile_14" draggable="true">
+          <img src="img/Group 10.png" alt="" class="draggableImg" id="tile_10" draggable="true">
+          <img src="img/Group 6.png" alt="" class="draggableImg" id="tile_06" draggable="true">
+
+
+          <!-- row 6 -->
+          <img src="img/Group 25.png" alt="" class="draggableImg" id="tile_25" draggable="true">
+          <img src="img/Group 16.png" alt="" class="draggableImg" id="tile_16" draggable="true">
+          <img src="img/Group 12.png" alt="" class="draggableImg" id="tile_12" draggable="true">
+          <img src="img/Group 8.png" alt="" class="draggableImg" id="tile_08" draggable="true">
+
+
+          <!--   row 7 -->
+          <img src="img/Group 26.png" alt="" class="draggableImg" id="tile_26" draggable="true">
+          <img src="img/Group 17.png" alt="" class="draggableImg" id="tile_17" draggable="true">
+          <img src="img/Group 13.png" alt="" class="draggableImg" id="tile_13" draggable="true">
+          <img src="img/Group 9.png" alt="" class="draggableImg" id="tile_09" draggable="true">
+          <img src="img/Group 5.png" alt="" class="draggableImg" id="tile_05" draggable="true">
+
+
+          <!--  row 8 -->
+          <img src="img/Group 24.png" alt="" class="draggableImg" id="tile_24" draggable="true">
+          <img src="img/Group 15.png" alt="" class="draggableImg" id="tile_15" draggable="true">
+          <img src="img/Group 11.png" alt="" class="draggableImg" id="tile_11" draggable="true">
+          <img src="img/Group 7.png" alt="" class="draggableImg" id="tile_07" draggable="true">
+
+
+          <!--  row 9 -->
+          <img src="img/Group 23.png" alt="" class="draggableImg" id="tile_23" draggable="true">
+          <img src="img/Group 22.png" alt="" class="draggableImg" id="tile_22" draggable="true">
+          <img src="img/Group 21.png" alt="" class="draggableImg" id="tile_21" draggable="true">
+          <img src="img/Group 20.png" alt="" class="draggableImg" id="tile_20" draggable="true">
+          <img src="img/Group 19.png" alt="" class="draggableImg" id="tile_19" draggable="true">
+
+          <div id="preview-img">
+            <img src="img/_Puzzle_solved.png" alt="">
+          </div>
         </div>
-
-        <img src="img/_Puzzle_bg_unsolved.png" alt="Unsolved Puzzle" id="unsolved-puzzle">
-      </div>
-
-      <div id="preview-img"> <!-- Puzzle solved preview start -->
-
-        <img src="img/_Puzzle_bg_unsolved.png" alt="Solved Puzzle">
-
-      </div> <!-- Puzzle solved preview end -->
-
-      <div id="puzzle-pieces">
-      </div>
-    </div> <!-- Puzzle container end -->
+        
 
     <!-- Bottom buttons start -->
-    <input type="button" value="Scramble" id="scramble">
-    <input type="button" value="Hint" id="hint" class="hide">
-    <input type="button" value="Reset" id="reset" class="hide">
+    <div id="btn-bar">
+      <input type="button" value="Scramble" id="scramble">
+      <input type="button" value="Hint" id="hint" class="hide">
+      <input type="button" value="Reset" id="reset" class="hide">      
+    </div>
+    
     <!-- Bottom buttons end -->
 
   </section>
@@ -99,6 +175,7 @@
   
   <!-- JavaScript Files -->
   <script src="js/puzzle.js"></script>
+  <script src="js/demo-drop-anywhere.js"></script>
 
 </body>
 </html>

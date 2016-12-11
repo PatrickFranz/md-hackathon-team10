@@ -1,22 +1,27 @@
 #puzzleContainer {
-  background-image: url(../img/_Puzzle_bg_unsolved.png);
-  background-repeat: no-repeat;
-  width: 868px;
-  height: 979px;
+  max-width: 888px;
+	margin: 0 auto;
+	border: 10px solid #fff;
+	box-shadow: 4px 45px 15px -30px rgba(68,68,68,0.3);
+  width: 888px;
   position: relative;
-  border: 1px solid;
+}
+
+#puzzleContainer > #img-unsolved{
+  z-index: -100;
 }
 
 .receiver {
   height: 95px;
   width: 110px;
   position: absolute;
-  z-index: 0;
+  z-index: 10;
 }
 
 .draggableImg {
   position: absolute;
   z-index: 99;
+  cursor: grab;
 }
 
 .shakeit {
