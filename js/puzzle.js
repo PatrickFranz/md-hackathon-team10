@@ -145,7 +145,7 @@ function dropTile(event) {
     droppedTile.setAttribute("draggable", "false");
     // increment count of correctly placed tiles
     counter++;
-    if(counter >= 2){
+    if(counter >= 41){
      win();
     }
   }
