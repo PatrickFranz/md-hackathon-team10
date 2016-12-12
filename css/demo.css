@@ -9,6 +9,7 @@
 
 #puzzleContainer > #img-unsolved{
   z-index: -100;
+  display: block;
 }
 
 .receiver {
