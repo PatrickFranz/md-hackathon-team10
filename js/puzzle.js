@@ -4,7 +4,7 @@ let btnReset = document.getElementById("reset")
 let divPieces = document.getElementById("tiles-area");
 let modal = document.getElementById("modal");
 let isStarted = false;
-let countDownTime = 100;
+let countDownTime = 120;
 // a counter to keep track of when the puzzle is completed
 let counter = 0;
 let theTiles = document.getElementsByClassName("draggableImg");
@@ -143,7 +143,7 @@ function dropTile(event) {
     droppedTile.setAttribute("draggable", "false");
     // increment count of correctly placed tiles
     counter++;
-    if(counter >= 2){
+    if(counter >= 41){
      win();
     }
   }
@@ -158,8 +158,6 @@ function win() {
   winner.addEventListener('ended', function(e){
       modal.classList = "";
     });
-	console.log("win()");
-
 }
 
 // setup event listeners
