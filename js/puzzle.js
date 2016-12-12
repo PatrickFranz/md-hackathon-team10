@@ -40,7 +40,7 @@ function hideSolution(){
 	document.getElementById("preview-img").style.opacity = "0";
 }
 
-var timer
+var timer;
 
 function countDownTimer(){
 	var counter = document.getElementById("timer");
