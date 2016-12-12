@@ -63,6 +63,13 @@ header {
 
 /*------ Main Section Styling ------*/
 
+section {
+	padding: 3em 0;
+	max-width: 888px;
+	margin: 0 auto;
+}
+
+
 input[type="button"] {
 	position: relative;
 	border: none;
