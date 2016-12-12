@@ -4,7 +4,7 @@ let btnReset = document.getElementById("reset")
 let divPieces = document.getElementById("tiles-area");
 let modal = document.getElementById("modal");
 let isStarted = false;
-let countDownTime = 100;
+let countDownTime = 120;
 // a counter to keep track of when the puzzle is completed
 let counter = 0;
 let theTiles = document.getElementsByClassName("draggableImg");
@@ -52,7 +52,7 @@ function countDownTimer(){
 	var seconds = countDownTime % 60;
 	var timer = setTimeout(function(){ countDownTimer() }, 1000);
 	countDownTime--;
-	if(countDownTime < 0 ){ 
+	if(countDownTime < 0 ){
 		clearTimeout(timer);
 		buzzer.play();
 		buzzer.addEventListener('ended', function(e){
@@ -143,17 +143,21 @@ function dropTile(event) {
     droppedTile.setAttribute("draggable", "false");
     // increment count of correctly placed tiles
     counter++;
-    if(counter >= 2){
+    if(counter >= 41){
      win();
     }
   }
 }
 
 function win() {
-  clearTimeout(countDownTimer);
+  var winner = new Audio();
+  winner.src = "img/winning.mp3";
+  countDownTime = 0;
 	clearTimeout(timer);
-	console.log("win()");
-
+  winner.play();
+  winner.addEventListener('ended', function(e){
+      modal.classList = "";
+    });
 }
 
 // setup event listeners
